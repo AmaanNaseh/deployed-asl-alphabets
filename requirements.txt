@@ -1,8 +1,7 @@
-streamlit
+streamlit==1.23.1
 mediapipe==0.8.11
 opencv-python==4.9.0.80
 opencv-contrib-python==4.9.0.80
-numpy
-pickle5
-scikit-learn
-pillow
+numpy==1.21.6
+pickle5==0.0.12
+scikit-learn==1.0.2

@@ -3,5 +3,5 @@ mediapipe==0.8.11
 opencv-python==4.9.0.80
 opencv-contrib-python==4.9.0.80
 numpy==1.21.6
-pickle5==0.0.12
+pickle5
 scikit-learn==1.0.2

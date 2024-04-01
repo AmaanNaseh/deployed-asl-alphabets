@@ -1,8 +1,6 @@
 streamlit
-mediapipe==0.9.0.1
-opencv-python-headless
-opencv-python==4.3.0.38
-opencv-contrib-python
 numpy
+opencv-python
+mediapipe
 pickle5
 scikit-learn

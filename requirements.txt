@@ -5,3 +5,4 @@ opencv-contrib-python
 numpy
 pickle5
 scikit-learn
+libgl1-mesa-glx

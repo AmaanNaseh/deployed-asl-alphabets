@@ -1,4 +1,7 @@
-streamlit
-opencv-python==4.7.0.68
-mediapipe==0.9.0.1
-scikit-learn==1.2.0
+streamlit==1.23.1
+mediapipe==0.8.11
+opencv-python
+opencv-contrib-python
+numpy
+pickle5
+scikit-learn

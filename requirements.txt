@@ -1,7 +1,7 @@
 streamlit
 mediapipe
-opencv-python
-opencv-contrib-python
+opencv-python==4.9.0.80
+opencv-contrib-python==4.9.0.80
 numpy
 pickle4
 scikit-learn==1.2.2

@@ -4,16 +4,14 @@ import cv2
 import mediapipe as mp
 import numpy as np
 import streamlit as st
-import urllib.request
 
 model_file = pickle.load(open('./model_numbers.p', 'rb'))
 
 model = model_file['model']
 
-#cam = cv2.VideoCapture(0)
-url = "http://192.168.0.105:8080/shot.jpg"
+cam = cv2.VideoCapture(0)
 
-st.title("Video Streaming")
+st.title("Sign Language Assistance")
 window = st.empty()
 stop_btn = st.button("Stop")
 
@@ -26,17 +24,13 @@ hands = mp_hands.Hands(static_image_mode=True, min_detection_confidence=0.3)
 labels = {0: '0', 1: '1', 2: '2', 3: '3', 4: '4', 5: '5', 6: '6', 7: '7', 8: '8', 9: '9'}
 
 
-#while cam.isOpened() and not stop_btn:
+while cam.isOpened() and not stop_btn:
 
-while True and not stop_btn:
     main_data = []
     x_ = []
     y_ = []
 
-    #_, img = cam.read()
-    imgPath = urllib.request.urlopen(url) 
-    imgNp = np.array(bytearray(imgPath.read()), dtype = np.uint8)
-    img = cv2.imdecode(imgNp, -1)
+    _, img = cam.read()
 
     height, width, _ = img.shape
 
@@ -100,5 +94,5 @@ while True and not stop_btn:
     #if key == 27:
         #break
     
-#cam.release()
+cam.release()
 cv2.destroyAllWindows()

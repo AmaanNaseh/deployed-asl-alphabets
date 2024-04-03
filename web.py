@@ -1,4 +1,4 @@
-from pathlib import path
+
 import pickle
 import cv2
 import mediapipe as mp
@@ -9,7 +9,7 @@ model_file = pickle.load(open('./model_numbers.p', 'rb'))
 
 model = model_file['model']
 
-cam = cv2.VideoCapture(0)
+cam = cv2.VideoCapture(-1)
 
 st.title("Video Streaming")
 window = st.empty()

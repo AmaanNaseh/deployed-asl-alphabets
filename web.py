@@ -9,7 +9,7 @@ model_file = pickle.load(open('./model_numbers.p', 'rb'))
 
 model = model_file['model']
 
-cam = cv2.VideoCapture(cv2.CAP_V4L2)
+cam = cv2.VideoCapture(1)
 
 st.title("Video Streaming")
 window = st.empty()

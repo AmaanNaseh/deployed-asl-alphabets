@@ -4,5 +4,5 @@ mediapipe
 opencv-python
 opencv-contrib-python
 numpy
-pickle5
+pickle4
 scikit-learn
